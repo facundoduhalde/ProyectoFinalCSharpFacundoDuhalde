@@ -9,10 +9,10 @@ namespace ProyectoFinalCSharpFacundoDuhalde
     internal class ProductoVendido
     {
         //Id, IdProducto, Stock, IdVenta 
-        public int Id { get; set; }
-        public int IdProducto { get; set; }
-        public int Stock { get; set; }
-        public int IdVenta { get; set; }
+        private int Id { get; set; }
+        private int IdProducto { get; set; }
+        private int Stock { get; set; }
+        private int IdVenta { get; set; }
 
         public ProductoVendido() 
         { 

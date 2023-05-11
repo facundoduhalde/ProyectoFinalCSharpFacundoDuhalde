@@ -3,12 +3,12 @@
     public class Producto
     {
         //Id, Descripcion, Costo, PrecioVenta, Stock, IdUsuario
-        public int Id { get; set; }
-        public string Descripcion { get; set; }
-        public double Costo { get; set; }
-        public double PrecioVenta { get; set; }
-        public int Stock { get; set; }
-        public int IdUsuario { get; set; }
+        private int Id { get; set; }
+        private string Descripcion { get; set; }
+        private double Costo { get; set; }
+        private double PrecioVenta { get; set; }
+        private int Stock { get; set; }
+        private int IdUsuario { get; set; }
 
         public Producto() 
         { 

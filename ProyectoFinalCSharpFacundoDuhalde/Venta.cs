@@ -9,9 +9,9 @@ namespace ProyectoFinalCSharpFacundoDuhalde
     internal class Venta
     {
         // Id, Comentarios, IdUsuario
-        public int Id { get; set; }
-        public string Comentarios { get; set; }
-        public int IdUsuario { get; set; }
+        private int Id { get; set; }
+        private string Comentarios { get; set; }
+        private int IdUsuario { get; set; }
 
         public Venta()
         {
