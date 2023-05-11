@@ -16,7 +16,6 @@ namespace ProyectoFinalCSharpFacundoDuhalde
         public Venta()
         {
             Comentarios = string.Empty; 
-
         }
     }
 }

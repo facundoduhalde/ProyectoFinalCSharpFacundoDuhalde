@@ -17,6 +17,6 @@ namespace ProyectoFinalCSharpFacundoDuhalde
         public ProductoVendido() 
         { 
         
-        }    
+        }     
     }
 }

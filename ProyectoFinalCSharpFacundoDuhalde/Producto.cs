@@ -12,7 +12,7 @@
 
         public Producto() 
         { 
-            Descripcion = string.Empty; 
+            Descripcion = string.Empty;  
         }
     }
 }

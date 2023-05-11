@@ -22,7 +22,7 @@ namespace ProyectoFinalCSharpFacundoDuhalde
             Apellido = string.Empty;    
             NombreUsuario = string.Empty;
             Contraseña = string.Empty;  
-            Mail = string.Empty;
+            Mail = string.Empty; 
         }    
     }
 }
