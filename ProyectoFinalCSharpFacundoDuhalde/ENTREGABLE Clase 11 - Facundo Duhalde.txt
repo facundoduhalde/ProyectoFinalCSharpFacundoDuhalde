@@ -1,0 +1,32 @@
+--EJERCICIOS CLASE 10
+SELECT id, Nombre, Apellido, NombreUsuario, Contraseña, Mail FROM SistemaGestion..Usuario where NombreUsuario = 'tcasazza'
+SELECT id, Nombre, Apellido, NombreUsuario, Contraseña, Mail FROM SistemaGestion..Usuario where NombreUsuario = 'tcasazza' and Contraseña = 'SoyTobiasCasazza'
+SELECT id, Nombre, Apellido, NombreUsuario, Contraseña, Mail FROM SistemaGestion..Usuario where NombreUsuario = 'tcasazza' and Contraseña = 'FacundoDuhaldeCoder'
+SELECT Descripciones, IdUsuario FROM SistemaGestion..Producto WHERE IdUsuario = 1
+INSERT INTO SistemaGestion..Usuario (Nombre, Apellido, NombreUsuario, Contraseña, Mail) VALUES ('Facundo', 'Duhalde', 'fduhalde', 'SoyFacundoDuhalde', 'facundo_duhalde@hotmail.com')
+INSERT INTO [SistemaGestion]..Producto (Descripciones, Costo, PrecioVenta, Stock, IdUsuario) VALUES ('Aceite de Girasol Cocinera', 350, 500, 20, 1)
+
+--EJERCICIOS CLASE 11
+SELECT id, Nombre, Apellido, NombreUsuario, Contraseña, Mail FROM SistemaGestion..Usuario where NombreUsuario = 'tcasazza'
+UPDATE SistemaGestion..Usuario SET Contraseña = 'NuevaContraseñaTobias' where Nombre = 'Tobias'
+DELETE FROM SistemaGestion..Usuario WHERE Apellido = 'Perez'
+UPDATE SistemaGestion..Producto SET Stock = 0 where Descripciones = 'Musculosa'
+DELETE FROM SistemaGestion..Producto WHERE Descripciones = 'Musculosa'
+SELECT Usuario.Nombre FROM SistemaGestion..Producto INNER JOIN SistemaGestion..Usuario ON Producto.IdUsuario = Usuario.Id
+
+-- EJERCICIOS ENTREGABLE
+SELECT Producto.Descripciones FROM [SistemaGestion]..ProductoVendido INNER JOIN [SistemaGestion]..Producto ON ProductoVendido.IdProducto = Producto.Id
+SELECT Venta.Id from Venta 
+inner join ProductoVendido 
+on ProductoVendido.IdVenta = Venta.id 
+inner join Producto 
+on ProductoVendido.IdProducto = Producto.id 
+where PrecioVenta > 10000 and Descripciones like '%ina'
+
+INSERT INTO Venta (Comentarios) VALUES ('Nueva Venta')
+INSERT INTO ProductoVendido (Stock, IdProducto, IdVenta) VALUES (20, 7, 7) -- AMBOS IDs 7 CORRESPONDEN AL ID DE VENTA Y ID DE PRODUCTO DE MI BASE DE DATOS
+
+--select * from Usuario
+--select * from Venta
+--select * from ProductoVendido
+--select * from Producto
